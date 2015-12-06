@@ -1,0 +1,12 @@
+<h1 class="title" data-bind="consumer"></h1>
+
+<ol>
+  <li data-foreach-item="items">
+    <span class="label" data-bind="item.topic"></span>
+    <span class="label" data-bind="item.partition"></span>
+    <span class="value" data-bind="item.latency"></span>
+  </li>
+</ol>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
